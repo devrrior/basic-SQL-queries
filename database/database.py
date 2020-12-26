@@ -1,6 +1,3 @@
-# TODO there are somes issues, when type in the input more than two registers, the excute should change excutemany
-# TODO I should include try and except
-
 import psycopg2 as db
 
 class DataBase:

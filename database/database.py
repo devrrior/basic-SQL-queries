@@ -1,17 +1,16 @@
-import psycopg2 as db
+# import psycopg2 as db
+import mysql.connector as db
 
 class DataBase:
 
-    # La clase debe inicalizar la DB, ademas debe poder seleccionar, agregar, eliminar y actualizar registros
 
     def __init__(self):
 
         self.__connection = db.connect(
-            host = '127.0.0.1',
-            port = '5432',
-            database = 'test_db',
-            user = 'postgres',
-            password = 'admin'
+            host = 'den1.mysql2.gear.host',
+            database = 'testdata0',
+            user = 'testdata0',
+            password = 'Er26-!o7TX9I'
         )
 
         self.__cursor = self.__connection.cursor()
